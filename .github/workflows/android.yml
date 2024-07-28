@@ -22,5 +22,12 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    
+    - name: Print working directory
+      run: pwd
+
+    - name: List directory contents
+      run: ls -la
+
     - name: Build with Gradle
       run: ./gradlew :app:assembleDebug
